@@ -1,0 +1,158 @@
+body {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0 20px; 
+    background-color: #282c34;
+    overflow: hidden;
+}
+
+.box{
+    background-color: rgb(24, 23, 23);
+    width: 50vw;
+    height: 100vh;
+}
+
+.container {
+    border: 2px solid #dedede;
+    background-color: #75C1FB;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+}
+
+.time-right {
+    float: right;
+}
+
+.time-left {
+    float: left;
+    top: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+.message-left {
+    width: 55%;
+    float: right;
+}
+
+.message-right {
+    width: 55%;
+    float: left;
+}
+
+.send_button{
+    position: absolute;
+    height: 50px;
+    width: 50px;  
+    border: none;      
+    outline: none;
+    background-color: #75C1FB;
+    margin-top: 50px;
+}
+
+.text-area{
+    resize: none;
+    height: 50px;
+    margin-top: 50px;
+    width: 716px;
+    font-size: 30px;
+}
+
+.messages-div {
+    height: 600px;
+    overflow: auto; 
+    padding: 15px;
+}
+
+.name-heading {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.marg-left-10 {
+    margin-left: 10px;
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+}
+
+label{
+    color: #dedede;
+}
+
+.contact{
+    padding: 50px;
+    border: 2px solid white;
+    margin-top: 200px;
+    height: 200px;
+}
+
+.label{
+    position: relative;
+}
+
+.username{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif ;
+}
+
+.username_input{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50px;
+}
+
+.username_add{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 100px;
+    background-color: #75C1FB;
+    width: 50px;
+    height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    border-radius: 50%;
+}
+
+.message{
+    font-size: 25px;
+}
