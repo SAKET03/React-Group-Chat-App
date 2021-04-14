@@ -1,9 +1,8 @@
-import React, { Component} from 'react';
+import React, { Component } from 'react';
 import { database } from './firebase';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons'
 import moment from 'moment'
-
 export default class Chat extends Component {
   constructor() 
   {
@@ -38,10 +37,10 @@ componentWillMount()
 onAddMessage(event) 
 {
   event.preventDefault();
-  const timex = moment().format('LT');
+  const timex = moment().format('LLL');
   console.log(timex);
   database.ref('messages').push({text: this.input.value, user: this.state.username, time: timex});
-  this.input.value = '';
+  this.input.value = ''; 
 }
 
   render() 
